@@ -14,7 +14,7 @@ public class AddcoinScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Z))
         {
             Vector3 offset = new Vector3(0, 0, 1);
             Instantiate(coins, transform.position + offset, transform.rotation);
